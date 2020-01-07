@@ -1,0 +1,43 @@
+{
+  "name": "@my-org/ui-components",
+  "version": "1.0.0",
+  "description": "Shared component library",
+  "main": "./lib/index.js",
+  "module": "./lib-esm/index.js",
+  "types": "./lib/index.d.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "start": "tsc && tsc --build tsconfig.esm.json --watch",
+    "libbuild": "tsc && tsc --build tsconfig.esm.json",
+    "story": "start-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^5.2.8",
+    "@storybook/addon-knobs": "^5.2.8",
+    "@storybook/addon-storysource": "^5.2.8",
+    "@storybook/addon-viewport": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "@types/storybook__react": "^4.0.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "source-map-loader": "^0.2.4",
+    "storybook-addon-jsx": "^7.1.13",
+    "storybook-readme": "^5.0.8",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.6.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.8.3",
+    "@material-ui/icons": "^4.5.1"
+  }
+}
