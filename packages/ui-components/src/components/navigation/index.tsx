@@ -27,18 +27,18 @@ export const Navigation = (props: NavigationProps) => {
   const classes = useStyles(props);
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position='static'>
         <Toolbar>
           <IconButton
-            edge="start"
+            edge='start'
             className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
+            color='inherit'
+            aria-label='menu'
           ></IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News and changes more changes all the things
+          <Typography variant='h6' className={classes.title}>
+            Best friend
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color='inherit'>Login</Button>
         </Toolbar>
       </AppBar>
     </div>
