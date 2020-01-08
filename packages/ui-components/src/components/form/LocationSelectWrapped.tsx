@@ -51,11 +51,7 @@ function LocationSelectWrapped(props) {
 
   if (typeof window !== "undefined" && !loaded.current) {
     if (!document.querySelector("#google-maps")) {
-      loadScript(
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCAicLNEqE6TUSQpyDm7W9zruHareLgwnM&libraries=places",
-        document.querySelector("head"),
-        "google-maps"
-      );
+      loadScript("////", document.querySelector("head"), "google-maps");
     }
 
     loaded.current = true;
